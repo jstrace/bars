@@ -2,8 +2,8 @@
   "name": "ascii-histogram",
   "version": "0.0.1",
   "repository": "visionmedia/node-ascii-histogram",
-  "description": "",
-  "keywords": [],
+  "description": "Ascii histograms",
+  "keywords": ["ascii", "histogram", "stats", "data", "cli", "terminal"],
   "dependencies": {
     "printf": "~0.1.2"
   },
