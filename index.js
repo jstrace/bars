@@ -26,6 +26,7 @@ function histogram(data, opts) {
   // options
 
   var width = opts.width || 60;
+  var barc = opts.bar || '#';
 
   // normalize data
 
@@ -41,7 +42,7 @@ function histogram(data, opts) {
     var p = d.val / maxVal;
     var shown = Math.round(width * p);
     var blank = width - shown
-    var bar = Array(shown + 1).join('#');
+    var bar = Array(shown + 1).join(barc);
     bar += Array(blank + 1).join(' ');
     str += fmt('  %*s | %s | %s\n', d.key, maxKey, bar, d.val);
   }

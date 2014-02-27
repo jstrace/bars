@@ -1,7 +1,7 @@
 {
-  "name": "cli-histogram",
+  "name": "ascii-histogram",
   "version": "0.0.1",
-  "repository": "visionmedia/node-cli-histogram",
+  "repository": "visionmedia/node-ascii-histogram",
   "description": "",
   "keywords": [],
   "dependencies": {
