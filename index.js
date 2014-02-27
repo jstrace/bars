@@ -30,7 +30,9 @@ function histogram(data, opts) {
 
   // normalize data
 
-  var data = toArray(data).sort(descending);
+  var data = toArray(data);
+  if (opts.sort) data = data.sort(descending);
+
   var maxKey = max(data.map(function(d){ return d.key.length }));
   var maxVal = max(data.map(function(d){ return d.val }));
   var str = '';

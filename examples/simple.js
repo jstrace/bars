@@ -2,8 +2,8 @@
 var histogram = require('..');
 
 var data = {
-  ferrets: 15,
   cats: 6,
+  ferrets: 15,
   dogs: 2,
   koalas: 0
 };
@@ -21,4 +21,4 @@ var data = {
 };
 
 console.log();
-console.log(histogram(data, { bar: '=', width: 20 }));
+console.log(histogram(data, { bar: '=', width: 20, sort: true }));

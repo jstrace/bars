@@ -47,7 +47,7 @@ var data = {
 };
 
 console.log();
-console.log(histogram(data, { bar: '=', width: 20 }));
+console.log(histogram(data, { bar: '=', width: 20, sort: true }));
 ```
 
 # License
