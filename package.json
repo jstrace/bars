@@ -1,13 +1,15 @@
 {
-  "name": "<name>",
+  "name": "cli-histogram",
   "version": "0.0.1",
-  "repository": "visionmedia/<name>",
+  "repository": "visionmedia/node-cli-histogram",
   "description": "",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "printf": "~0.1.2"
+  },
   "devDependencies": {
     "mocha": "*",
-    "should": "*"  
+    "should": "*"
   },
   "license": "MIT"
 }
