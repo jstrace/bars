@@ -27,6 +27,7 @@ function histogram(data, opts) {
 
   var width = opts.width || 60;
   var barc = opts.bar || '#';
+  var map = opts.map || noop;
 
   // normalize data
 
@@ -46,7 +47,7 @@ function histogram(data, opts) {
     var blank = width - shown
     var bar = Array(shown + 1).join(barc);
     bar += Array(blank + 1).join(' ');
-    str += fmt('  %*s | %s | %s\n', d.key, maxKey, bar, d.val);
+    str += fmt('  %*s | %s | %s\n', d.key, maxKey, bar, map(d.val));
   }
 
   return str;
@@ -85,4 +86,12 @@ function toArray(obj) {
       val: obj[key]
     }
   })
+}
+
+/**
+ * Noop map function.
+ */
+
+function noop(val) {
+  return val;
 }

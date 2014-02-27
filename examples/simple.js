@@ -1,5 +1,6 @@
 
 var histogram = require('..');
+var bytes = require('bytes');
 
 var data = {
   cats: 6,
@@ -22,3 +23,14 @@ var data = {
 
 console.log();
 console.log(histogram(data, { bar: '=', width: 20, sort: true }));
+
+// value mapping
+
+var data = {
+  '/srv': bytes('5gb'),
+  '/data': bytes('150gb'),
+  '/etc': bytes('150mb')
+};
+
+console.log();
+console.log(histogram(data, { bar: '*', width: 20, sort: true, map: bytes }));

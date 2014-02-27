@@ -3,13 +3,21 @@
   "version": "1.1.0",
   "repository": "visionmedia/node-ascii-histogram",
   "description": "Ascii histograms",
-  "keywords": ["ascii", "histogram", "stats", "data", "cli", "terminal"],
+  "keywords": [
+    "ascii",
+    "histogram",
+    "stats",
+    "data",
+    "cli",
+    "terminal"
+  ],
   "dependencies": {
     "printf": "~0.1.2"
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "bytes": "~0.2.1"
   },
   "license": "MIT"
 }
