@@ -1,6 +1,6 @@
 {
   "name": "ascii-histogram",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": "visionmedia/node-ascii-histogram",
   "description": "Ascii histograms",
   "keywords": ["ascii", "histogram", "stats", "data", "cli", "terminal"],
