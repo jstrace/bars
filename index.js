@@ -42,7 +42,7 @@ function histogram(data, opts) {
 
   for (var i = 0; i < data.length; i++) {
     var d = data[i];
-    var p = d.val / maxVal;
+    var p = (d.val / maxVal) || 1;
     var shown = Math.round(width * p);
     var blank = width - shown
     var bar = Array(shown + 1).join(barc);
