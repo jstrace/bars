@@ -1,7 +1,7 @@
 
-# ascii-histogram
+# Bars
 
-  Ascii histograms for node.
+  Ascii bar charting for node.
 
 ```
      cats | ########################                                     | 6
@@ -24,13 +24,13 @@
 ## Installation
 
 ```
-$ npm install ascii-histogram
+$ npm install jstrace/bars
 ```
 
 ## Example
 
 ```js
-var histogram = require('ascii-histogram');
+var bars = require('bars');
 var bytes = require('bytes');
 
 var data = {
@@ -41,7 +41,7 @@ var data = {
 };
 
 console.log();
-console.log(histogram(data));
+console.log(bars(data));
 
 // customized
 
@@ -53,7 +53,7 @@ var data = {
 };
 
 console.log();
-console.log(histogram(data, { bar: '=', width: 20, sort: true }));
+console.log(bars(data, { bar: '=', width: 20, sort: true }));
 
 // value mapping
 
@@ -64,7 +64,7 @@ var data = {
 };
 
 console.log();
-console.log(histogram(data, { bar: '*', width: 20, sort: true, map: bytes }));
+console.log(bars(data, { bar: '*', width: 20, sort: true, map: bytes }));
 ```
 
 # License

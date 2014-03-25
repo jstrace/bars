@@ -1,8 +1,8 @@
 {
-  "name": "ascii-histogram",
+  "name": "bars",
   "version": "1.2.1",
-  "repository": "visionmedia/node-ascii-histogram",
-  "description": "Ascii histograms",
+  "repository": "jstrace/bars",
+  "description": "Ascii bar charting",
   "keywords": [
     "ascii",
     "histogram",
