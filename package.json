@@ -19,5 +19,8 @@
     "should": "*",
     "bytes": "~0.2.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  }
 }

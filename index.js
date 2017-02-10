@@ -35,14 +35,14 @@ function histogram(data, opts) {
   if (opts.sort) data = data.sort(descending);
 
   var maxKey = max(data.map(function(d){ return d.key.length }));
-  var maxVal = max(data.map(function(d){ return d.val }));
+  var maxVal = max(data.map(function(d){ return d.val })) || width;
   var str = '';
 
   // blah blah histo
 
   for (var i = 0; i < data.length; i++) {
     var d = data[i];
-    var p = (d.val / maxVal) || 1;
+    var p = d.val / maxVal;
     var shown = Math.round(width * p);
     var blank = width - shown
     var bar = Array(shown + 1).join(barc);
