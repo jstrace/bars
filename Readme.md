@@ -65,7 +65,20 @@ var data = {
 
 console.log();
 console.log(bars(data, { bar: '*', width: 20, sort: true, map: bytes }));
+
+// force order
+
+var data = {
+  ferrets: 20,
+  cats: 12,
+  dogs: 30,
+  koalas: 3
+};
+
+console.log();
+console.log(bars(data, { keys: ['cats', 'dogs', 'ferrets'] }));
 ```
+
 
 # License
 

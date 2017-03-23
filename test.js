@@ -33,6 +33,16 @@ describe('bars', function () {
     bars(data, { width: 10, sort: true }).should.equal(expected);
   });
 
+  it('it should use keys in order', function () {
+    var data = { d: 1, e: 6, '0': 7 };
+    var expected = '\
+  d | #          | 1\n\
+  e | #########  | 6\n\
+  0 | ########## | 7\n\
+';
+    bars(data, { width: 10, keys: ['d', 'e', '0'] }).should.equal(expected);
+  });
+
   it('it should map values', function () {
     var data = {
       '/srv': bytes('5gb'),
