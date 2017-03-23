@@ -31,7 +31,7 @@ function histogram(data, opts) {
 
   // normalize data
 
-  var data = toArray(data);
+  var data = toArray(data, opts.keys || Object.keys(data));
   if (opts.sort) data = data.sort(descending);
 
   var maxKey = max(data.map(function(d){ return d.key.length }));
@@ -79,8 +79,8 @@ function max(data) {
  * Turn object into an array.
  */
 
-function toArray(obj) {
-  return Object.keys(obj).map(function(key){
+function toArray(obj, keys) {
+  return keys.map(function(key){
     return {
       key: key,
       val: obj[key]
