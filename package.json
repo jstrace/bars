@@ -12,6 +12,7 @@
     "terminal"
   ],
   "dependencies": {
+    "minimist": "^1.2.0",
     "printf": "~0.1.2"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "bytes": "~0.2.1"
   },
   "license": "MIT",
+  "bin": "./cli.js",
   "scripts": {
     "test": "node test.js"
   }
